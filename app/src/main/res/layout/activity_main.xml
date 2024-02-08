@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="395dp"
+        android:layout_height="715dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondo_main" />
+
+    <Button
+        android:id="@+id/btnAlcoholic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="showAlcoholicDrinks"
+        android:text="Alcoholic Drinks"
+        android:textColor="#1D3C98" />
+
+    <Button
+        android:id="@+id/btnNonAlcoholic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAlcoholic"
+        android:layout_marginTop="16dp"
+        android:onClick="showDeveloperInfo"
+        android:text="Information about the developer"
+        android:textColor="#D17356" />
+</RelativeLayout>
